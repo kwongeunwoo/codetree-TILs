@@ -13,9 +13,6 @@ int main()
     vector<vector<int>> array2(n,vector<int>(m));
     vector<vector<int>> array(n,vector<int>(m));
 
-
-
-
     for (int i = 0; i < n * 2; i++)
     {
         for (int j = 0; j < m; j++)
