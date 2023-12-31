@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 int main()
@@ -8,9 +9,12 @@ int main()
 
     cin >> n >> m;
 
-    int array1[4][4] = {0};
-    int array2[4][4] = {0};
-    int array[4][4] = {0};
+    vector<vector<int>> array1(n,vector<int>(m));
+    vector<vector<int>> array2(n,vector<int>(m));
+    vector<vector<int>> array(n,vector<int>(m));
+
+
+
 
     for (int i = 0; i < n * 2; i++)
     {
@@ -22,7 +26,7 @@ int main()
             }
             else
             {
-                cin >> array2[i - 4][j];
+                cin >> array2[i - n][j];
             }
         }
     }
