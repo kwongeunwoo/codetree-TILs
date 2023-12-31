@@ -22,7 +22,7 @@ int main()
             }
             else
             {
-                cin >> array2[i - n][j];
+                cin >> array2[i - 4][j];
             }
         }
     }
