@@ -1,8 +1,6 @@
 #include <iostream>
-
 using namespace std;
 
-// 최솟값을 반환하는 함수를 작성합니다.
 int Min(int a, int b, int c) {
     int min_val = a;
     if(min_val > b)
