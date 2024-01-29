@@ -1,34 +1,23 @@
 #include <iostream>
+
 using namespace std;
 
-int main()
-{
-    int a,b,c;
+// 최솟값을 반환하는 함수를 작성합니다.
+int Min(int a, int b, int c) {
+    int min_val = a;
+    if(min_val > b)
+        min_val = b;
+    if(min_val > c)
+        min_val = c;
+    
+    return min_val;
+}
+
+int main() {
+    // 변수 선언 및 입력:
+    int a, b, c;
     cin >> a >> b >> c;
 
-    int min = 0;
-    if(a <= b && a <= c)
-    {
-        min = a;
-    }
-    else if(a <= b && a > c)
-    {
-        min = c;
-    }
-    else if(a > b && a <= c)
-    {
-        min = b;
-    }
-    else
-    {
-        if(b <= c)
-        {
-            min = b;
-        }
-        else
-            min = c;
-    }
-
-    cout << min << endl;
+    cout << Min(a, b, c);
     return 0;
 }
