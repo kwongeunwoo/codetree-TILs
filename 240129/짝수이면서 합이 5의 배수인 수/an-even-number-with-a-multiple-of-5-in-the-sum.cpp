@@ -9,7 +9,7 @@ void DistinguishFunction(int &n)
     }
     else
     {
-        cout << "NO" << endl;
+        cout << "No" << endl;
     }
 }
 
