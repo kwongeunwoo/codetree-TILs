@@ -22,7 +22,7 @@ void PrimeAddFunction(int &a, int &b)
     int i = a;
     for (; i <= b; i++)
     {
-        if (PrimeCheckFunction(i) == true)
+        if (PrimeCheckFunction(i) == true && i != 1) 
         {
             arr.push_back(i);
         }
