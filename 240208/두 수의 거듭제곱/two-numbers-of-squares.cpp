@@ -1,6 +1,16 @@
 #include <iostream>
+using namespace std;
 
-int main() {
-    // 여기에 코드를 작성해주세요.
+int main()
+{
+    int a,b;
+    cin >> a >> b;
+
+    int value = 1;
+    for(int i = 1; i <= b; i++)
+    {
+        value = value * a;
+    }
+    cout << value << endl;
     return 0;
 }
